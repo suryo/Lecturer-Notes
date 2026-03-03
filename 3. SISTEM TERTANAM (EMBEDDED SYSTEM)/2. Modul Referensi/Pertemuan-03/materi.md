@@ -4,6 +4,8 @@
 
 ### Contoh 1: Smart Street Light (LDR)
 
+![Sensor LDR (Light Dependent Resistor)](sensor-ldr.jpg)
+
 Bagaimana cara sistem lampu jalan mengetahui kapan harus menyala otomatis?
 
 > [!TIP] **Jawaban/Solusi**
@@ -15,6 +17,8 @@ Bagaimana cara sistem lampu jalan mengetahui kapan harus menyala otomatis?
 > ```
 
 ### Contoh 2: Alarm Jarak Parkir (Ultrasonik)
+
+![Sensor Ultrasonik HC-SR04](hc-sr04-ultrasonic-sensor.jpg)
 
 Bagaimana logika sensor ultrasonik menghitung jarak dalam CM?
 
@@ -28,6 +32,8 @@ Bagaimana logika sensor ultrasonik menghitung jarak dalam CM?
 > ```
 
 ### Contoh 3: Monitoring Suhu Ruangan (DHT11)
+
+![Sensor DHT11 (Suhu & Kelembaban)](sensor-dht11.jpg)
 
 Berapa nilai suhu maksimal yang dianggap kritis di dalam ruang server dan bagaimana pemicunya?
 
