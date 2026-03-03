@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Produk — TokoKita</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Toko<span>Kita</span></a>
+        <div class="d-flex gap-3 align-items-center">
+          <a href="cart.html" class="cart-icon text-dark text-decoration-none"
+            >🛒 <span class="cart-badge" style="display: none">0</span></a
+          >
+          <a href="login.html" class="btn btn-primary btn-sm">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Beranda</a></li>
+          <li class="breadcrumb-item"><a href="produk.html">Produk</a></li>
+          <li class="breadcrumb-item active">Laptop ASUS VivoBook 15</li>
+        </ol>
+      </nav>
+
+      <div class="row g-5">
+        <!-- Foto Produk -->
+        <div class="col-md-5">
+          <img
+            src="https://via.placeholder.com/500x400?text=Laptop+ASUS"
+            alt="Laptop ASUS"
+            class="img-fluid rounded-3 shadow mb-3"
+          />
+          <div class="d-flex gap-2">
+            <img
+              src="https://via.placeholder.com/80?text=1"
+              class="img-thumbnail"
+              style="cursor: pointer; width: 80px"
+            />
+            <img
+              src="https://via.placeholder.com/80?text=2"
+              class="img-thumbnail"
+              style="cursor: pointer; width: 80px"
+            />
+            <img
+              src="https://via.placeholder.com/80?text=3"
+              class="img-thumbnail"
+              style="cursor: pointer; width: 80px"
+            />
+          </div>
+        </div>
+
+        <!-- Info Produk -->
+        <div class="col-md-7">
+          <small class="text-muted">💻 Elektronik</small>
+          <h1 class="h3 mt-1 fw-bold">Laptop ASUS VivoBook 15</h1>
+          <div class="d-flex align-items-center gap-3 my-3">
+            <span class="fs-3 fw-bold text-primary">Rp 6.999.000</span>
+            <span class="price-old fs-5">Rp 7.500.000</span>
+            <span class="badge-discount">Hemat 7%</span>
+          </div>
+
+          <div class="mb-3">
+            ⭐⭐⭐⭐⭐
+            <small class="text-muted">(128 ulasan) · Terjual 340</small>
+          </div>
+
+          <p class="text-muted">
+            Laptop ringan dengan layar 15.6 inci FHD, processor Intel Core i5
+            Gen 12, RAM 8GB DDR4, SSD 512GB NVMe. Cocok untuk mahasiswa,
+            profesional, dan pelajar. Garansi resmi 2 tahun.
+          </p>
+
+          <table class="table table-sm mb-3">
+            <tr>
+              <td class="text-muted">Merk</td>
+              <td><strong>ASUS</strong></td>
+            </tr>
+            <tr>
+              <td class="text-muted">Seri</td>
+              <td><strong>VivoBook 15 X1504</strong></td>
+            </tr>
+            <tr>
+              <td class="text-muted">Prosesor</td>
+              <td><strong>Intel Core i5 Gen 12</strong></td>
+            </tr>
+            <tr>
+              <td class="text-muted">RAM</td>
+              <td><strong>8 GB DDR4</strong></td>
+            </tr>
+            <tr>
+              <td class="text-muted">Storage</td>
+              <td><strong>512 GB SSD NVMe</strong></td>
+            </tr>
+            <tr>
+              <td class="text-muted">Stok</td>
+              <td><strong class="text-success">✅ 15 tersedia</strong></td>
+            </tr>
+          </table>
+
+          <!-- Qty & Tombol -->
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="input-group" style="width: 130px">
+              <button class="btn btn-outline-secondary" id="btnMinus">−</button>
+              <input
+                type="number"
+                id="qtyInput"
+                class="form-control text-center"
+                value="1"
+                min="1"
+              />
+              <button class="btn btn-outline-secondary" id="btnPlus">+</button>
+            </div>
+            <button
+              class="btn btn-primary px-4 btn-add-cart"
+              data-id="1"
+              data-nama="Laptop ASUS VivoBook 15"
+              data-harga="6999000"
+            >
+              🛒 Tambah ke Keranjang
+            </button>
+          </div>
+          <a href="checkout.html" class="btn btn-warning w-100 fw-bold"
+            >⚡ Beli Sekarang</a
+          >
+        </div>
+      </div>
+
+      <!-- Deskripsi Tab -->
+      <div class="mt-5">
+        <ul class="nav nav-tabs" id="produkTab">
+          <li class="nav-item">
+            <button
+              class="nav-link active"
+              data-bs-toggle="tab"
+              data-bs-target="#deskripsi"
+            >
+              Deskripsi
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#spesifikasi"
+            >
+              Spesifikasi
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#ulasan"
+            >
+              Ulasan (128)
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content border border-top-0 p-4 rounded-bottom">
+          <div class="tab-pane fade show active" id="deskripsi">
+            <p>
+              Laptop ASUS VivoBook 15 hadir dengan performa tangguh dan desain
+              ramping yang ideal untuk aktivitas produktif sehari-hari.
+              Dilengkapi dengan layar FHD anti-glare yang nyaman di mata, serta
+              baterai berkapasitas besar untuk menemani hari-hari panjang Anda.
+            </p>
+            <ul>
+              <li>Layar 15.6" Full HD IPS Anti-Glare</li>
+              <li>Intel Core i5 Generasi ke-12</li>
+              <li>16GB RAM dapat ditingkatkan</li>
+              <li>SSD 512GB NVMe (baca/tulis cepat)</li>
+              <li>Garansi resmi ASUS 2 tahun</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="spesifikasi">
+            <table class="table table-bordered">
+              <tr>
+                <th>Layar</th>
+                <td>15.6" FHD (1920x1080) IPS, 60Hz</td>
+              </tr>
+              <tr>
+                <th>Prosesor</th>
+                <td>Intel Core i5-1235U (10 Core, up to 4.4GHz)</td>
+              </tr>
+              <tr>
+                <th>RAM</th>
+                <td>8 GB DDR4 3200MHz</td>
+              </tr>
+              <tr>
+                <th>Storage</th>
+                <td>512 GB PCIe NVMe SSD</td>
+              </tr>
+              <tr>
+                <th>GPU</th>
+                <td>Intel Iris Xe Graphics</td>
+              </tr>
+              <tr>
+                <th>OS</th>
+                <td>Windows 11 Home</td>
+              </tr>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="ulasan">
+            <div class="mb-3 pb-3 border-bottom">
+              <strong>Andi S.</strong> ⭐⭐⭐⭐⭐
+              <p class="text-muted mt-1">
+                "Laptop sangat bagus, pengiriman cepat dan aman. Puas belanja di
+                TokoKita!"
+              </p>
+            </div>
+            <div class="mb-3">
+              <strong>Budi R.</strong> ⭐⭐⭐⭐
+              <p class="text-muted mt-1">
+                "Performa kencang untuk ngoding dan desain. Recommended!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
