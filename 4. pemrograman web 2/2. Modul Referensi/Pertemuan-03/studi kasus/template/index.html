@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TokoKita — Belanja Mudah, Harga Pasti</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Toko<span>Kita</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="produk.html">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#promo">Promo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tentang">Tentang</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-3">
+            <a
+              href="cart.html"
+              class="cart-icon text-dark text-decoration-none"
+            >
+              🛒 <span class="cart-badge" style="display: none">0</span>
+            </a>
+            <a href="login.html" class="btn btn-primary btn-sm px-3">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1>Belanja Mudah,<br />Harga Pasti! 🛍️</h1>
+            <p class="my-4">
+              Temukan ribuan produk pilihan dengan harga terbaik. Pengiriman
+              cepat ke seluruh Indonesia!
+            </p>
+            <a href="produk.html" class="btn btn-warning btn-lg fw-bold me-2"
+              >Belanja Sekarang</a
+            >
+            <a href="#kategori" class="btn btn-outline-light btn-lg"
+              >Lihat Kategori</a
+            >
+          </div>
+          <div class="col-lg-6 text-center d-none d-lg-block">
+            <div style="font-size: 10rem">🛒</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KATEGORI -->
+    <section class="py-5" id="kategori">
+      <div class="container">
+        <h2 class="section-title text-center">Belanja per Kategori</h2>
+        <p class="section-sub text-center">Cari yang kamu mau dengan cepat</p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center">
+          <a href="produk.html" class="category-chip">🛍️ Semua</a>
+          <a href="produk.html?kategori=elektronik" class="category-chip"
+            >💻 Elektronik</a
+          >
+          <a href="produk.html?kategori=pakaian" class="category-chip"
+            >👕 Pakaian</a
+          >
+          <a href="produk.html?kategori=buku" class="category-chip">📚 Buku</a>
+          <a href="produk.html?kategori=perabot-rumah" class="category-chip"
+            >🏠 Perabot</a
+          >
+          <a href="produk.html?kategori=olahraga" class="category-chip"
+            >⚽ Olahraga</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUK TERBARU -->
+    <section class="py-4">
+      <div class="container">
+        <h2 class="section-title">Produk Terbaru</h2>
+        <p class="section-sub">Pilihan fresh untuk kamu</p>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 product-card-wrapper">
+            <div class="product-card">
+              <img
+                src="https://via.placeholder.com/400x220?text=Laptop+ASUS"
+                alt="Laptop ASUS"
+              />
+              <div class="card-body">
+                <small class="text-muted">Elektronik</small>
+                <h6 class="product-name mt-1">Laptop ASUS VivoBook 15</h6>
+                <div class="price">Rp 6.999.000</div>
+                <small class="price-old">Rp 7.500.000</small>
+                <span class="badge-discount ms-1">-7%</span>
+                <div class="d-grid mt-2 gap-1">
+                  <a href="detail.html" class="btn btn-primary btn-sm"
+                    >Lihat Detail</a
+                  >
+                  <button
+                    class="btn btn-cart btn-sm btn-add-cart"
+                    data-id="1"
+                    data-nama="Laptop ASUS VivoBook 15"
+                    data-harga="6999000"
+                  >
+                    + Keranjang
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 product-card-wrapper">
+            <div class="product-card">
+              <img
+                src="https://via.placeholder.com/400x220?text=Samsung+A54"
+                alt="Samsung A54"
+              />
+              <div class="card-body">
+                <small class="text-muted">Elektronik</small>
+                <h6 class="product-name mt-1">Smartphone Samsung Galaxy A54</h6>
+                <div class="price">Rp 4.200.000</div>
+                <div class="d-grid mt-2 gap-1">
+                  <a href="detail.html" class="btn btn-primary btn-sm"
+                    >Lihat Detail</a
+                  >
+                  <button
+                    class="btn btn-cart btn-sm btn-add-cart"
+                    data-id="2"
+                    data-nama="Samsung A54"
+                    data-harga="4200000"
+                  >
+                    + Keranjang
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 product-card-wrapper">
+            <div class="product-card">
+              <img
+                src="https://via.placeholder.com/400x220?text=Earphone+JBL"
+                alt="JBL"
+              />
+              <div class="card-body">
+                <small class="text-muted">Elektronik</small>
+                <h6 class="product-name mt-1">TWS Earphone JBL T230</h6>
+                <div class="price">Rp 299.000</div>
+                <small class="price-old">Rp 350.000</small>
+                <span class="badge-discount ms-1">-15%</span>
+                <div class="d-grid mt-2 gap-1">
+                  <a href="detail.html" class="btn btn-primary btn-sm"
+                    >Lihat Detail</a
+                  >
+                  <button
+                    class="btn btn-cart btn-sm btn-add-cart"
+                    data-id="3"
+                    data-nama="Earphone JBL"
+                    data-harga="299000"
+                  >
+                    + Keranjang
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-sm-6 col-md-4 col-lg-3 product-card-wrapper">
+            <div class="product-card">
+              <img
+                src="https://via.placeholder.com/400x220?text=Sepatu+Nike"
+                alt="Nike"
+              />
+              <div class="card-body">
+                <small class="text-muted">Olahraga</small>
+                <h6 class="product-name mt-1">Sepatu Lari Nike Air Max 270</h6>
+                <div class="price">Rp 750.000</div>
+                <small class="price-old">Rp 850.000</small>
+                <span class="badge-discount ms-1">-12%</span>
+                <div class="d-grid mt-2 gap-1">
+                  <a href="detail.html" class="btn btn-primary btn-sm"
+                    >Lihat Detail</a
+                  >
+                  <button
+                    class="btn btn-cart btn-sm btn-add-cart"
+                    data-id="12"
+                    data-nama="Sepatu Nike Air Max"
+                    data-harga="750000"
+                  >
+                    + Keranjang
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="produk.html" class="btn btn-outline-primary px-4"
+            >Lihat Semua Produk →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO BANNER -->
+    <section
+      class="py-5 promo"
+      id="promo"
+      style="background: linear-gradient(135deg, #f59e0b, #ef4444)"
+    >
+      <div class="container text-center text-white">
+        <h2 class="fw-bold">🎉 Flash Sale Hari Ini!</h2>
+        <p class="fs-5">
+          Diskon hingga 30% untuk semua kategori. Berlaku hari ini sampai tengah
+          malam!
+        </p>
+        <a href="produk.html" class="btn btn-light btn-lg fw-bold mt-2"
+          >Ambil Promo Sekarang</a
+        >
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="tentang">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5>Toko<span style="color: var(--secondary)">Kita</span></h5>
+            <p>
+              Platform belanja online terpercaya dengan ribuan produk pilihan
+              dan harga terbaik.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <h5>Navigasi</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="produk.html">Produk</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Kategori</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">💻 Elektronik</a></li>
+              <li><a href="#">👕 Pakaian</a></li>
+              <li><a href="#">📚 Buku</a></li>
+              <li><a href="#">⚽ Olahraga</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Kontak</h5>
+            <p>📧 support@tokokita.id</p>
+            <p>📞 0800-1234-5678</p>
+            <p>🏠 Jakarta, Indonesia</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © 2025 TokoKita. Dibuat untuk Praktikum Pemrograman Web 2.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
